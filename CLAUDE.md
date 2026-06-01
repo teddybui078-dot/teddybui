@@ -9,6 +9,7 @@ This directory is where landing pages, product UI, and frontend experiments live
 This project is versioned on GitHub as a **public** repo. When pushing work:
 
 - **One commit per feature / change.** Never dump everything into a single commit — split work into logically-scoped commits (e.g. design tokens, nav, a given page, a palette change) so history reads as a sequence of features.
+- **No commit-message prefixes required.** Don't bother with `feat:` / `chore:` / `fix:` conventional-commit tags. A plain, descriptive subject is fine — what matters is that the commits are *separate*, not how they're labelled.
 - **Never commit secrets.** `.env` (and anything matching `.env*`) is gitignored and must stay that way. Credentials live in `.env` as `GITHUB_USERNAME` and `GITHUB_TOKEN` — read them from there to authenticate pushes, but never stage, echo, or hard-code them anywhere in the repo or in chat.
 - **GitHub account:** `teddybui078@gmail.com` (username in `.env`). Use this email as the commit author for this project.
 - Reference images dropped in the repo root (`simple.png`, `navbar.png`, etc.) are inspiration only — keep them out of commits (gitignored).
