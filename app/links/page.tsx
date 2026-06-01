@@ -6,20 +6,20 @@ import { Reveal } from "@/components/ui/scroll-reveal";
 import { linkGroups, type LinkItem } from "@/lib/data/links";
 
 export const metadata: Metadata = {
-  title: "Socials",
+  title: "Links",
   description: "Where to find Meridian Labs, and what we've made public.",
 };
 
-export default function SocialsPage() {
+export default function LinksPage() {
   return (
-    <PageShell title="Socials" subtitle="Find us, and everything we keep in the open.">
+    <PageShell title="Links" subtitle="Find us, and everything we keep in the open.">
       <div className="max-w-[640px] space-y-12">
-        {linkGroups.map((group, gi) => (
+        {linkGroups.map((group) => (
           <section key={group.title}>
-            <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-500">
+            <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-400">
               {group.title}
             </h2>
-            <ul className="mt-3 divide-y divide-white/[0.06] border-t border-white/[0.06]">
+            <ul className="mt-3 divide-y divide-ink-950/[0.06] border-t border-ink-950/[0.06]">
               {group.items.map((item, i) => (
                 <Reveal key={item.label} delay={0.03 * i} as="li">
                   <LinkRow item={item} />
@@ -37,7 +37,7 @@ function LinkRow({ item }: { item: LinkItem }) {
   const inner = (
     <>
       <div>
-        <div className="text-[15px] font-medium text-ink-100 transition-colors group-hover:text-emerald-300">
+        <div className="text-[15px] font-medium text-ink-900 transition-colors group-hover:text-emerald-600">
           {item.label}
         </div>
         <div className="mt-0.5 text-[13px] text-ink-500">{item.description}</div>
@@ -45,12 +45,12 @@ function LinkRow({ item }: { item: LinkItem }) {
       {item.external ? (
         <ArrowUpRight
           weight="bold"
-          className="size-4 text-ink-500 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-emerald-300"
+          className="size-4 text-ink-400 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-emerald-600"
         />
       ) : (
         <ArrowRight
           weight="bold"
-          className="size-4 text-ink-500 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-emerald-300"
+          className="size-4 text-ink-400 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-emerald-600"
         />
       )}
     </>
