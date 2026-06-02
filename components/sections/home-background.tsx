@@ -9,9 +9,9 @@ export function HomeBackground() {
         className="absolute inset-0"
         style={{
           background:
-            // green aurora rising from the bottom over a near-black top
+            // pure-green aurora rising from the bottom over a near-black top
             "radial-gradient(56% 50% at 14% 108%, rgba(40,210,130,0.50), transparent 60%)," +
-            "radial-gradient(52% 48% at 88% 102%, rgba(20,150,210,0.30), transparent 58%)," +
+            "radial-gradient(52% 48% at 88% 102%, rgba(46,200,120,0.36), transparent 58%)," +
             "radial-gradient(80% 60% at 70% 118%, rgba(120,235,150,0.40), transparent 60%)," +
             "radial-gradient(100% 80% at 50% 124%, rgba(28,191,101,0.62), transparent 64%)," +
             "radial-gradient(70% 50% at 50% -8%, rgba(28,191,101,0.12), transparent 58%)," +
