@@ -45,18 +45,6 @@
 :root {
   --background: #ffffff;
   --foreground: var(--color-ink-950);
-
-  /* Immersive-home typography (Mainframe-style redesign) */
-  --font-heading: "HelveticaNowDisplay-Medium", "Helvetica Neue", Arial, sans-serif;
-  --font-body: "HelveticaNowDisplayW01-Rg", "Helvetica Neue", Arial, sans-serif;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-.cursor-blink {
-  animation: blink 1s step-end infinite;
 }
 
 html,
