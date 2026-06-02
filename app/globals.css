@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* Drive the `dark:` variant from the `.dark` class (the site is always dark),
+   not the OS preference — Tailwind v4 defaults to the media query otherwise. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Neutral ink ramp — 950 = near-black text, 50 = near-white surface */
   --color-ink-50: #f6f7f8;
