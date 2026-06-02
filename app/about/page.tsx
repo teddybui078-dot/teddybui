@@ -23,32 +23,43 @@ const VALUES = [
 export default function AboutPage() {
   return (
     <PageShell title="About" subtitle="A studio for the people who build.">
-      <div className="max-w-[60ch] space-y-6">
-        {NARRATIVE.map((para, i) => (
-          <Reveal key={i} delay={0.04 * i}>
-            <p className="text-lg leading-relaxed text-ink-700">{para}</p>
-          </Reveal>
-        ))}
-      </div>
+      {/* Narrative — section label on the left, prose on the right */}
+      <section className="grid gap-y-6 lg:grid-cols-[180px_minmax(0,1fr)] lg:gap-x-20">
+        <Reveal>
+          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-400 lg:sticky lg:top-32">
+            Who we are
+          </h2>
+        </Reveal>
+        <div className="max-w-[68ch] space-y-6">
+          {NARRATIVE.map((para, i) => (
+            <Reveal key={i} delay={0.04 * i}>
+              <p className="text-lg leading-relaxed text-ink-700">{para}</p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
 
-      <div className="mt-16 max-w-[60ch] border-t border-ink-950/[0.08] pt-10">
-        <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-400">
-          What we believe
-        </h2>
-        <dl className="mt-6 space-y-5">
+      {/* Values — label on the left, two-up grid on the right */}
+      <section className="mt-20 grid gap-y-8 border-t border-ink-950/[0.08] pt-12 lg:grid-cols-[180px_minmax(0,1fr)] lg:gap-x-20">
+        <Reveal>
+          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-400 lg:sticky lg:top-32">
+            What we believe
+          </h2>
+        </Reveal>
+        <dl className="grid gap-x-12 gap-y-8 sm:grid-cols-2">
           {VALUES.map(([title, body], i) => (
             <Reveal key={title} delay={0.04 * i}>
-              <div className="flex flex-col gap-1 sm:flex-row sm:gap-6">
-                <dt className="flex items-center gap-2 text-[15px] font-medium text-ink-950 sm:w-52 sm:shrink-0">
+              <div className="flex flex-col gap-1.5">
+                <dt className="flex items-center gap-2 text-[15px] font-medium text-ink-950">
                   <span className="size-1.5 rounded-full bg-emerald-400" aria-hidden />
                   {title}
                 </dt>
-                <dd className="text-[15px] text-ink-500">{body}</dd>
+                <dd className="text-[15px] leading-relaxed text-ink-500">{body}</dd>
               </div>
             </Reveal>
           ))}
         </dl>
-      </div>
+      </section>
     </PageShell>
   );
 }
