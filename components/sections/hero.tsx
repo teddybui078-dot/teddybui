@@ -29,29 +29,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-6 text-center">
-      {/* white -> green gradient + faint grid */}
-      <div aria-hidden className="absolute inset-0 -z-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, #ffffff 0%, #f1fcf6 32%, rgba(28,191,101,0.22) 72%, rgba(28,191,101,0.42) 100%)",
-          }}
-        />
-        <div
-          className="grid-overlay absolute inset-0"
-          style={{
-            maskImage:
-              "radial-gradient(120% 100% at 50% 35%, black 35%, transparent 85%)",
-            WebkitMaskImage:
-              "radial-gradient(120% 100% at 50% 35%, black 35%, transparent 85%)",
-          }}
-        />
-        {/* soft fade into the white footer below */}
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-white/70" />
-      </div>
-
+    <section className="relative flex min-h-[92vh] items-center justify-center px-6 text-center">
       <div className="mx-auto flex w-full max-w-3xl flex-col items-center">
         {/* logo mark */}
         <motion.div custom={0} variants={fade} initial="hidden" animate="show">
