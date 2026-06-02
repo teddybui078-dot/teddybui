@@ -16,7 +16,6 @@ export const site = {
   nav: [
     { label: "Projects", href: "/projects" },
     { label: "About", href: "/about" },
-    { label: "Blog", href: "/blog" },
     { label: "Links", href: "/links" },
   ] as NavItem[],
 

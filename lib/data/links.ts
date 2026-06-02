@@ -18,7 +18,6 @@ export const linkGroups: LinkGroup[] = [
     items: [
       { label: "All projects", description: "The full catalog of tools", href: "/projects" },
       { label: "About Meridian", description: "How the studio works", href: "/about" },
-      { label: "Blog", description: "Notes on building", href: "/blog" },
       { label: "Changelog", description: "What shipped this week", href: "https://example.com", external: true },
     ],
   },
