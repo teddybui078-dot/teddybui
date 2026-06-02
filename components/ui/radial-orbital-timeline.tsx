@@ -221,7 +221,14 @@ export default function RadialOrbitalTimeline({
                 ref={(el) => {
                   nodeRefs.current[item.id] = el;
                 }}
-                className="absolute transition-all duration-700 cursor-pointer"
+                className={`absolute cursor-pointer ${
+                  autoRotate
+                    ? // While spinning, track the target tightly so nodes stay
+                      // centered on the ring. A long transition eases along a
+                      // chord and pulls the node inside the line.
+                      "transition-transform duration-75 ease-linear"
+                    : "transition-all duration-700"
+                }`}
                 style={nodeStyle}
                 onClick={(e) => {
                   e.stopPropagation();
