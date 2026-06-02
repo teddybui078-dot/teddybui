@@ -38,8 +38,8 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: var(--color-ink-950);
+  --background: var(--color-ink-950);
+  --foreground: var(--color-ink-50);
 }
 
 html,
@@ -51,18 +51,19 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Light base wash — a whisper of green at the top, white everywhere else */
+/* Dark base — green glows bleeding in from the edges (site-wide) */
 body {
   background:
-    radial-gradient(1200px 620px at 50% -22%, rgba(28, 191, 101, 0.06), transparent 62%),
-    #ffffff;
+    radial-gradient(1100px 600px at 84% -10%, rgba(28, 191, 101, 0.14), transparent 60%),
+    radial-gradient(900px 720px at -5% 45%, rgba(28, 191, 101, 0.08), transparent 55%),
+    var(--color-ink-950);
 }
 
-/* Faint hairline grid (light surfaces) */
+/* Faint hairline grid (dark surfaces) */
 .grid-overlay {
   background-image:
-    linear-gradient(to right, rgba(10, 13, 16, 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(10, 13, 16, 0.045) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 
@@ -93,7 +94,7 @@ button:active,
 
 ::selection {
   background: var(--color-emerald-400);
-  color: #ffffff;
+  color: var(--color-ink-950);
 }
 
 ::-webkit-scrollbar {
@@ -104,9 +105,9 @@ button:active,
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(10, 13, 16, 0.14);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(10, 13, 16, 0.26);
+  background: rgba(255, 255, 255, 0.22);
 }
