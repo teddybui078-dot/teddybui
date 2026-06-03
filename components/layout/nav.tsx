@@ -20,16 +20,19 @@ export function Nav() {
       <nav
         className={cn(
           "flex items-center gap-1.5 rounded-full border border-ink-950/[0.07]",
-          "bg-white/70 px-2.5 py-2 backdrop-blur-xl",
-          "shadow-[0_12px_36px_-12px_rgba(10,13,16,0.18),0_0_26px_-8px_rgba(28,191,101,0.16),inset_0_1px_0_rgba(255,255,255,0.75)]",
+          "bg-cream/75 px-2.5 py-2 backdrop-blur-xl",
+          "shadow-[0_12px_36px_-12px_rgba(22,18,13,0.16),inset_0_1px_0_rgba(255,255,255,0.6)]",
         )}
       >
         <Link
           href="/"
           aria-label={site.name}
-          className="flex size-9 items-center justify-center"
+          className="flex items-center gap-2 pl-1.5 pr-1"
         >
-          <Logo className="size-8" />
+          <Logo className="size-6" />
+          <span className="text-[14px] font-semibold tracking-tight text-ink-950">
+            Teddy Bui
+          </span>
         </Link>
 
         <span className="mx-1 h-5 w-px bg-ink-950/10" aria-hidden />

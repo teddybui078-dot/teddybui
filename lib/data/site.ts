@@ -3,12 +3,12 @@ export type NavItem = { label: string; href: string };
 export type Social = { label: string; handle: string; href: string };
 
 export const site = {
-  name: "Meridian Labs",
-  wordmark: "Meridian",
+  name: "Teddy Bui",
+  wordmark: "Teddy Bui",
   tagline: "an AI studio for builders",
   description:
-    "Meridian Labs is an AI studio that designs and ships practical tools for students and founders — research copilots, writing engines, and the small machines that move work forward.",
-  url: "https://meridianlabs.co",
+    "Teddy Bui is a builder shipping practical AI tools for students and founders: research copilots, writing engines, and the small machines that move work forward.",
+  url: "https://teddybui.com",
   email: "hello@meridianlabs.co",
   location: "Remote · Sydney / SF",
   founded: 2024,
