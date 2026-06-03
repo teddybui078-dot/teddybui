@@ -38,12 +38,11 @@ export default function AboutPage() {
                 <Logo className="h-3 w-auto text-cream" />
               </div>
             </figcaption>
-            {/* Placeholder — swap the src for a real photo of the founder */}
             <Image
-              src="https://picsum.photos/seed/meridian-about/720/860"
-              alt="Teddy, founder of Meridian Labs"
-              width={720}
-              height={860}
+              src="/gitpfp.png"
+              alt="Teddy Bui"
+              width={1446}
+              height={1936}
               priority
               className="h-auto w-full object-cover"
             />
