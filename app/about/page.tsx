@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 };
 
 const INTRO = [
-  "I build practical AI tools for the people racing a deadline — students and founders. I care about software that quietly removes friction, and I spend my time building, shipping, and talking shop with other builders.",
-  "Meridian Labs is the studio behind that work. Since 2024 it's been a place to launch many small, sharp tools and let the good ones compound — everything built to be fast, private, and genuinely useful.",
+  "Hi! My name is Teddy, and welcome to Meridian Labs — a studio where I launch cool AI projects. They're small, sharp tools for students and founders that quietly take the friction out of getting things done.",
+  "I like building fast, shipping often, and talking shop with other builders. Everything here is made to be quick, private, and genuinely useful — and the experiments that work are the ones I keep.",
 ];
 
 export default function AboutPage() {
@@ -33,7 +33,7 @@ export default function AboutPage() {
                 <span className="size-3 rounded-full bg-[#febc2e]" />
                 <span className="size-3 rounded-full bg-[#28c840]" />
               </div>
-              <span className="text-xs font-medium text-white/70">Meridian</span>
+              <span className="text-xs font-medium text-white/70">Teddy</span>
               <div className="flex justify-end">
                 <Logo className="size-4" />
               </div>
@@ -41,7 +41,7 @@ export default function AboutPage() {
             {/* Placeholder — swap the src for a real photo of the founder */}
             <Image
               src="https://picsum.photos/seed/meridian-about/720/860"
-              alt="The person behind Meridian Labs"
+              alt="Teddy, founder of Meridian Labs"
               width={720}
               height={860}
               priority
