@@ -1,21 +1,32 @@
 import * as React from "react";
-import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 /**
- * The mark — an angular "M" of twin peaks with a rising circuit-step leg.
- * The source art is green, so `brightness-0` renders it solid black to fit the
- * beige/cream + black palette. On dark surfaces, pass `invert` to flip it light.
+ * Teddy Bui monogram — "TB" drawn in the current text colour, so it's black on
+ * light surfaces and `text-cream` on dark ones. Pure vector, scales cleanly,
+ * and carries none of the old Meridian "M" mark.
  */
 export function Logo({ className }: { className?: string }) {
   return (
-    <Image
-      src="/meridianlabs-logo.png"
-      alt="Teddy Bui"
-      width={88}
-      height={88}
-      priority
-      className={cn("size-[22px] object-contain brightness-0", className)}
-    />
+    <svg
+      viewBox="0 0 32 32"
+      className={cn("size-[22px]", className)}
+      role="img"
+      aria-label="Teddy Bui"
+    >
+      <text
+        x="16"
+        y="16"
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif"
+        fontSize="18"
+        fontWeight="800"
+        letterSpacing="-1.2"
+        fill="currentColor"
+      >
+        TB
+      </text>
+    </svg>
   );
 }

@@ -133,7 +133,7 @@ export function Hero() {
           <RadialOrbitalTimeline
             className="h-full"
             timelineData={timelineData}
-            centerLabel="Meridian Labs"
+            centerLabel="Teddy Bui"
             centerContent={
               <Logo className="size-12 drop-shadow-[0_2px_8px_rgba(22,18,13,0.3)]" />
             }

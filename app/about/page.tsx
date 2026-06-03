@@ -35,7 +35,7 @@ export default function AboutPage() {
               </div>
               <span className="text-xs font-medium text-cream/70">Teddy</span>
               <div className="flex justify-end">
-                <Logo className="size-4 invert" />
+                <Logo className="size-4 text-cream" />
               </div>
             </figcaption>
             {/* Placeholder — swap the src for a real photo of the founder */}
