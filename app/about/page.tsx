@@ -26,16 +26,18 @@ export default function AboutPage() {
 
         {/* macOS-window photo card */}
         <Reveal delay={0.12}>
-          <figure className="mt-10 max-w-[380px] overflow-hidden rounded-2xl border border-ink-950/10 bg-beige shadow-[0_30px_70px_-30px_rgba(22,18,13,0.4)]">
-            <figcaption className="grid grid-cols-[1fr_auto_1fr] items-center border-b border-ink-950/10 px-4 py-3">
+          <figure className="mt-10 max-w-[380px] overflow-hidden rounded-2xl border border-ink-950/10 bg-ink-950 shadow-[0_30px_70px_-30px_rgba(22,18,13,0.5)]">
+            <figcaption className="grid grid-cols-[1fr_auto_1fr] items-center border-b border-white/10 px-4 py-3">
               <div className="flex items-center gap-2">
-                <span className="size-3 rounded-full bg-ink-950/25" />
-                <span className="size-3 rounded-full bg-ink-950/40" />
-                <span className="size-3 rounded-full bg-ink-950/55" />
+                <span className="size-3 rounded-full bg-cream/40" />
+                <span className="size-3 rounded-full bg-cream/60" />
+                <span className="size-3 rounded-full bg-cream/80" />
               </div>
-              <span className="text-xs font-medium text-ink-500">Teddy</span>
+              <span className="text-xs font-medium text-cream/70">Teddy</span>
               <div className="flex justify-end">
-                <Logo className="h-3 w-auto text-ink-950" />
+                <span className="inline-flex items-center rounded-md bg-beige px-1.5 py-1">
+                  <Logo className="h-3 w-auto text-ink-950" />
+                </span>
               </div>
             </figcaption>
             <Image
