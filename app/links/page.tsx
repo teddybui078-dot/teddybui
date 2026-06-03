@@ -12,7 +12,6 @@ import {
 } from "lucide-react";
 import { PageShell } from "@/components/layout/page-shell";
 import { Reveal } from "@/components/ui/scroll-reveal";
-import { Logo } from "@/components/layout/logo";
 import { linkGroups, type LinkItem } from "@/lib/data/links";
 
 export const metadata: Metadata = {
@@ -24,7 +23,6 @@ export const metadata: Metadata = {
 // brand colour; generic links use neutral line icons that tint on hover.
 const ICONS: Record<string, ReactNode> = {
   "All projects": <LayoutGrid className="size-[18px]" />,
-  "About Meridian": <Logo className="size-[18px]" />,
   Changelog: <ScrollText className="size-[18px]" />,
   "X / Twitter": <FaXTwitter className="size-[18px]" />,
   GitHub: <FaGithub className="size-[18px]" />,
