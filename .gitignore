@@ -37,3 +37,5 @@ next-env.d.ts
 /logoref.png
 /gitpfp.png
 /teddybui.com-logo.png
+.vercel
+/teddybuiwebsitelogo.png
