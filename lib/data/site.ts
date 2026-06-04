@@ -7,7 +7,7 @@ export const site = {
   wordmark: "Teddy Bui",
   tagline: "an AI studio for builders",
   description:
-    "Teddy Bui is a builder shipping practical AI tools for students and founders: research copilots, writing engines, and the small machines that move work forward.",
+    "I'm a builder shipping practical AI tools for students and founders: research copilots, writing engines, and the small machines that move work forward.",
   url: "https://teddybui.com",
   email: "hello@meridianlabs.co",
   location: "Remote · Sydney / SF",
