@@ -93,7 +93,7 @@ export const orbit: OrbitNode[] = [
     kind: "GOAL",
     tag: "ongoing",
     blurb:
-      "Document the wins and the dead ends, so the studio becomes a trail other builders can actually follow.",
+      "I document the wins and the dead ends, so my studio becomes a trail other builders can actually follow.",
     icon: Globe,
     focus: 58,
     related: ["Curious", "Ship real tools"],
