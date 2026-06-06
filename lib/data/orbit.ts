@@ -38,7 +38,7 @@ export const orbit: OrbitNode[] = [
     kind: "WHO I AM",
     tag: "always",
     blurb:
-      "I build fast and ship often. I'd rather have a rough thing working today than a perfect thing someday.",
+      "I build fast and ship often — I'd rather have a rough thing working today than a perfect thing someday.",
     icon: Hammer,
     focus: 96,
     related: ["Ship real tools", "Sharp tools"],
