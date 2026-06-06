@@ -60,7 +60,7 @@ export const orbit: OrbitNode[] = [
     kind: "FOCUS",
     tag: "core",
     blurb:
-      "Practical AI for students and founders like me — tools that quietly take the friction out of getting things done.",
+      "I build practical AI for students and founders like me — tools that quietly take the friction out of getting things done.",
     icon: Sparkles,
     focus: 90,
     related: ["Sharp tools", "Curious"],
