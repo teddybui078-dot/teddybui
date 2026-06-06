@@ -49,7 +49,7 @@ export const orbit: OrbitNode[] = [
     kind: "WHO I AM",
     tag: "2026",
     blurb:
-      "Still learning in public. Every project is me figuring something out and leaving notes for whoever comes next.",
+      "I'm still learning in public — every project is me figuring something out and leaving notes for whoever comes next.",
     icon: Compass,
     focus: 82,
     related: ["Build in public", "AI for builders"],
