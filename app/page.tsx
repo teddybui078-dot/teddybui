@@ -1,5 +1,5 @@
-import { Hub } from "@/components/sections/hub";
+import { Hero } from "@/components/sections/hero";
 
 export default function HomePage() {
-  return <Hub />;
+  return <Hero />;
 }
